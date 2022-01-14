@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>​
+<details>
+	<person>
+		<name>Akshay Mahadeo Gaikwad</name>​
+		<interests>Playing outdoor games, listening to music</interests>​
+	</person>
+	<person>
+		<name>Jack</name>​
+		<interests>Music</interests>​
+	</person>
+	<person>
+		<name>Ashley</name>​
+		<interests>Football</interests>​
+	</person>
+	<person>
+		<name>Elizabeth</name>​
+		<interests>Playing guitar</interests>​
+	</person>
+	<person>
+		<name>Alex</name>​
+		<interests>Eating new dishes</interests>​
+	</person>
+	<person>
+		<name>Lee</name>​
+		<interests>Singing</interests>​
+	</person>
+	<person>
+		<name>Emma</name>​
+		<interests>Reading</interests>​
+	</person>
+	<person>
+		<name>Charlotte</name>​
+		<interests>Watching movies</interests>​
+	</person>
+	<person>
+		<name>Liam</name>​
+		<interests>Hiking</interests>​
+	</person>
+	<person>
+		<name>Oliver</name>​
+		<interests>Swimming</interests>​
+	</person>
+</details>

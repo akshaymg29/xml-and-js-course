@@ -1,0 +1,3 @@
+- Table created in excel sheet after drag and drop XML file. Table columns name are same as tag name present.
+
+- if <?xml version="1.0" encoding="utf-8"?> is present in XML file then it showed error while drag and drop XML file.
