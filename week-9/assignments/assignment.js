@@ -11,7 +11,7 @@ const loadData = (path) =>
   });
 
 
-  const renderTable = (data, nameTerm) => {
+  const renderTable = (data, first, last) => {
     const tableBody = document.getElementById("table-main");
   
     if (!tableBody) {
@@ -20,8 +20,12 @@ const loadData = (path) =>
 
     let source = data;
   
-    if (nameTerm) {
-      source = source.filter(({ first_name }) => first_name.toLowerCase().includes(nameTerm));
+    if (first) {
+      source = source.filter(({ first_name }) => first_name.toLowerCase().includes(first));
+    }
+
+    if(last) {
+        source = source.filter(({ last_name }) => last_name.toLowerCase().includes(last));
     }
   
     const rows = source.reduce(
@@ -38,9 +42,10 @@ const loadData = (path) =>
   const onSubmit = (event) => {
     event.preventDefault();
   
-    const term = event.target.name.value;
-  
-    loadData(`./data.json`).then((data) => renderTable(data, term));
+    const first = event.target.first_name.value;
+    const last = event.target.last_name.value;
+    
+    loadData(`./data.json`).then((data) => renderTable(data, first, last));
   };
   
   const onReset = () => {
