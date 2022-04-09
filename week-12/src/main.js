@@ -29,7 +29,6 @@ const onSubmit = (event) => {
   event.preventDefault();
 
   const term = event.target.name.value;
-
   getAll().then(({ data }) => renderTable(data, term));
 };
 

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Test Input</title>
+  </head>
+  <body>
+    <form onsubmit="onSubmit(event)" onreset="onReset()">
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label> <nbsp/> &nbsp; &nbsp;
+      
+      <label for="state">Choose a state:</label>
+      <select id="state" name="state">
+        <option selected="selected" value=""/>
+      </select><br/>
+      <input
+        type="text"
+        name="city"
+        id="input-city-term"
+        placeholder="enter city name"
+      />
+      <button type="submit">Apply filters</button>
+      <button type="reset">Reset</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First_Name</th>
+          <th>Last_Name</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>
