@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Test Input</title>
+  </head>
+  <body>
+    <form id="myForm">
+        
+        <input type="text" name="id" id="input-id-term" placeholder="enter ID" value=""/>
+      <input type="text" name="firstNm" id="input-firstnm-term" placeholder="enter first name" />
+      <input type="text" name="lastNm" id="input-lastnm-term" placeholder="enter last name" />
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label> <nbsp/> &nbsp; &nbsp;
+      <input type="text" name="city" id="input-city-term" placeholder="enter city name" />
+      <input type="text" name="state" id="input-state-term" placeholder="enter state name" /><br/>
+      
+      <input type="text" name="country" id="input-country-term" placeholder="enter country name" />
+      <input type="text" name="postal" id="input-postal-term" placeholder="enter postal code" />
+      <input type="text" name="email" id="input-email-term" placeholder="enter email id" />
+      <input type="text" name="phone" id="input-phone-term" placeholder="enter phone no" />
+      
+      <button type="submit">Apply filters</button>
+      <button type="reset">Reset</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>          
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Postal Code</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>
